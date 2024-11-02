@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import MyStack from "./navigation/MyStack";
 import { useFonts } from "expo-font";
-import { StatusBar } from 'react-native'
+import { StatusBar } from "react-native";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -12,9 +12,11 @@ export default function App() {
   });
   if (!fontsLoaded) return null;
 
+      
+
   return (
     <NavigationContainer>
-        <StatusBar style="auto" />
+      <StatusBar style="auto" />
       <MyStack />
     </NavigationContainer>
   );
